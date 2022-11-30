@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Geo - App</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <link rel="stylesheet" href="./assets/css/spinner.css">
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logomap">
+        <img src="https://img.icons8.com/officel/512/llama.png" alt="llamaicon">
+        <h1>GEOMAPP</h1>
+      </div>
+      <div class="info">
+        <div class="temperatura-btn">
+          <h4>La temperatura en tus manos</h4>
+        </div>
+        <img src="./assets/img/githubicon.svg" alt="githobicon">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="leyenda-container">
+        <div class="leyenda">
+          <h1>Leyenda</h1>
+          <div class="leyenda__color">
+            <div class="color-container">
+              <span style="background-color: #2596be;"></span>
+              <p>-25 a -15</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #25d4e9;"></span>
+              <p>-15 a -10</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #a2eef5;"></span>
+              <p>-10 a -6</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #73342f;"></span>
+              <p>-6 a -3</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #c53e3b;"></span>
+              <p>-3 a -1</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #d72f1f;"></span>
+              <p>-1 a 1</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #fc0202;"></span>
+              <p>1 a 4</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #fe7d82;"></span>
+              <p>4 a 8</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #feccce;"></span>
+              <p>8 a 13</p>
+            </div>
+            <div class="color-container">
+              <span style="background-color: #b7a65c;"></span>
+              <p>13 a más</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <div id="spinner" class="loader-container">
+          <span class="loader"></span>
+          <h5>Modo chargin, espera...</h5>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="redes">
+      <h3>Redes</h3>
+      <div>
+        <img src="./assets/img/ytlogo.svg" alt="">
+        <img src="./assets/img/facebook.png" alt="">
+        <img src="./assets/img/twitterLogo.png" alt="">
+      </div>
+    </div>
+    <div class="integrantes">
+      <h3>Integrantes</h3>
+      <ul>
+        <li>Frank Villachica Gaspar</li>
+        <li>Richard Pisfil Salazar</li>
+        <li>Wilmer Reluz Salvador</li>
+        <li>Keith Tarco Flores</li>
+        <li>David Samame Paico</li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <img src="./assets/img/chandado.svg" alt="">
+      <h3>Todos los derecho reservados.</h3>
+    </div>
+  </footer>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto minmax(calc(100vh - 80px),1fr) auto;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+  background-color: #01BAEF;
+}
+
+.navbar .logomap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar .info img{
+  width: 40px;
+}
+
+
+.navbar .temperatura-btn {
+  color: #fff;
+  background-color: #0B4F6C;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.navbar .temperatura-btn h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0B4F6C;
+}
+
+.navbar img {
+  width: 60px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.leyenda-container {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.leyenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.leyenda h1 {
+  font-size: 28px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.leyenda__color{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.color-container {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.color-container span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgba(117, 117, 117, 0.55);
+  padding: 40px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.redes div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.integrantes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.integrantes ul{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+
+.integrantes ul li{
+  text-align: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes,.integrantes,.copyright h3{
+  color: #0B4F6C;
+  text-align: center;
+}
+
+
+.map-container {
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  border-radius: 10px;
+}
+
+.temperature {
+  color: rgb(10, 10, 10);
+  font-size: 25px;
+}
