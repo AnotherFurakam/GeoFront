@@ -63,7 +63,7 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: minmax(300px,1fr) 5fr;
   gap: 40px;
   width: 100%;
   height: 100%;
