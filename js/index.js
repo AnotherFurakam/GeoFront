@@ -23,7 +23,7 @@ const getData = async () => {
         }
       }).bindPopup(`
         <div> 
-          <h1>Temperature</h1>
+          <h2>Temperature</h2>
           <div>
             <p class='temperature'>${Math.round(gson.features[0].properties.temperature * 100)/100.00}º</p>
           </div>
