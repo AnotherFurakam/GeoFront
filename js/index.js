@@ -1,4 +1,3 @@
-
 var map = L.map('map').setView([-10.261, -76.641], 5).setZoom(5);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -13,7 +12,6 @@ const getData = async () => {
       console.log(gson)
       L.geoJSON(gson, {
         onEachFeature: function (features, layer) {
-
         },
         style: {
           fillColor: gson.features[0].properties.color,
